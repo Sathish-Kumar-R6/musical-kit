@@ -1,0 +1,47 @@
+html,
+body {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-image: url('../assets/coding_music_background.png');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	min-height: 100vh; /* Ensures full screen coverage */
+}
+
+.keys {
+	display: flex;
+	flex: 1;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	min-height: 100vh;
+	align-content: center;
+}
+
+.key {
+	border: .4rem solid black;
+	border-radius: .5rem;
+	margin: 1rem;
+	padding: 1rem 2.5rem;
+	transition: all .05s ease;
+	text-align: center;
+	color: white;
+	background: rgba(0,0,0,0.4);
+	text-shadow: 0 0 .5rem black;
+}
+
+.playing {
+	transform: scale(1.1);
+	border-color: burlywood;
+	box-shadow: 0 0 .5rem #ffc600;
+}
+
+kbd {
+    font-size: 30px;
+    font-weight: bold;
+}
